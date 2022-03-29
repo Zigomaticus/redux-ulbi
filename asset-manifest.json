@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/redux-ulbi/static/css/main.6235f2cd.css",
+    "main.js": "/redux-ulbi/static/js/main.149b0cbe.js",
+    "index.html": "/redux-ulbi/index.html",
+    "main.6235f2cd.css.map": "/redux-ulbi/static/css/main.6235f2cd.css.map",
+    "main.149b0cbe.js.map": "/redux-ulbi/static/js/main.149b0cbe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6235f2cd.css",
+    "static/js/main.149b0cbe.js"
+  ]
+}
