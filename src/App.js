@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-// Index
-// import { ADD_CASH, GET_CASH } from "./index";
+// Async
+import { fetchCustomers } from "./store/asynAction";
 // Store
 import {
   addCustomerAction,
@@ -65,18 +65,24 @@ function App() {
         >
           Add customer
         </button>
-        {/* <button
-          onClick={() => wow(Number(prompt()))}
+        <button
+          onClick={() => dispatch(fetchCustomers())}
           type="button"
           className="btn btn-primary"
         >
-          Get cash
-        </button> */}
+          Add customers from base
+        </button>
       </div>
       {customers.length > 0 ? (
         <div className="customers">
-          {customers.map((customer) => (
-            <div onClick={() => removeCustomer(customer)}>{customer.name}</div>
+          {customers.map((customer, name) => (
+            <div
+              className="customer"
+              onClick={() => removeCustomer(customer)}
+              key={name}
+            >
+              {customer.name}
+            </div>
           ))}
         </div>
       ) : (
